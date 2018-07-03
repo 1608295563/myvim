@@ -43,4 +43,5 @@ cd ./pyflakes-vim/ftplugin
 cp -R ./python/  ~/.vim/ftplugin/
 参考：https://blog.csdn.net/miaoqiucheng/article/details/80366563
 
-
+没有安装插件：
+https://www.cnblogs.com/xiaxiaosheng/p/3357690.html
