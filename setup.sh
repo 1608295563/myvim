@@ -17,7 +17,7 @@ sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
 mv -f ~/vim ~/vim_old
 cd ~/ && git clone https://github.com/1608295563/myvim.git
 mv -f ~/.vim ~/.vim_old
-mv -f ~/vim ~/.vim
+mv -f ~/myvim ~/.vim
 mv -f ~/.vimrc ~/.vimrc_old
 mv -f ~/.vim/.vimrc ~/
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
