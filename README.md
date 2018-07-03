@@ -1,3 +1,6 @@
+https://blog.csdn.net/u010871058/article/details/54253774
+https://github.com/ma6174/vim-deprecated/tree/master/ftplugin/python
+
 # 超强vim配置文件
 
 [![Build Status](https://travis-ci.org/ma6174/vim.png?branch=master)](https://travis-ci.org/ma6174/vim)
@@ -33,3 +36,11 @@
 ### 查看更新日志：
 
 [`update_log.md`](update_log.md)
+
+打开python文件会提示错误，解决方案如下：
+git clone --recursive git://github.com/kevinw/pyflakes-vim.git
+cd ./pyflakes-vim/ftplugin
+cp -R ./python/  ~/.vim/ftplugin/
+参考：https://blog.csdn.net/miaoqiucheng/article/details/80366563
+
+
