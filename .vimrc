@@ -229,8 +229,15 @@ endfunc
 map <F8> :call Rungdb()<CR>
 func! Rungdb()
 	exec "w"
-	exec "!g++ % -std=c++11 -g -o %<"
-	exec "!gdb ./%<"
+    if &filetype == 'c'
+	    exec "!g++ % -std=c++11 -g -o %<"
+	    exec "!gdb ./%<"
+    elseif &filetype == 'cpp'
+	    exec "!g++ % -std=c++11 -g -o %<"
+	    exec "!gdb ./%<" 
+    elseif &filetype == 'python'
+        exec "!pdb  %"
+    endif
 endfunc
 
 
@@ -470,3 +477,4 @@ let g:ctrlp_custom_ignore = '\v\.(exe|so|dll)$'
 let g:ctrlp_extensions = ['funky']
 
 let NERDTreeIgnore=['\.pyc']
+
